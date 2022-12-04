@@ -1,9 +1,7 @@
 import os
-import data.ABIDEParser as Reader
 import numpy as np
 import deepdish
 import argparse
-from data.DataLoader import ABIDE_loader
 import scipy.io as sio
 import torch
 from torch_geometric.data import InMemoryDataset,Data
@@ -11,7 +9,6 @@ from os.path import join, isfile
 from os import listdir
 import numpy as np
 import os.path as osp
-from imports.read_abide_stats_parall import read_data
 from networkx.convert_matrix import from_numpy_matrix
 import networkx as nx
 from torch_geometric.utils import remove_self_loops
