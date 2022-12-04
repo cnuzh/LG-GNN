@@ -5,7 +5,7 @@ This repo is the official implementation of [Classification of Brain Disorders i
 ## I. Usage:
 The main contribution of our work is the proposed LG-GNN architecture, which enables crosstalk between local brain regions and the global population, and allows identification biomarkers.
 
-The data used in our work are from [ADNI](https://adni.loni.usc.edu/) and [ABIDE](http://preprocessed-connectomes-project.org/abide/).
+The data used in our work are from [ADNI](https://adni.loni.usc.edu/) and [ABIDE](http://preprocessed-connectomes-project.org/abide/). Please follow the relevant regulations to download from the websites.
 
 Using the `main.py` to train and test the model on your own dataset.
 The proposed network **LG-GNN** is defined in the `layer.py`.  It can be easily edited and embed in your own code.
