@@ -1,4 +1,3 @@
-import data.ABIDEParser as Reader
 import numpy as np
 import torch
 from utils.gcn_utils import preprocess_features
