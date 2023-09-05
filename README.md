@@ -20,11 +20,14 @@ The proposed network **LG-GNN** is defined in the `layer.py`.  It can be easily 
 ## III. Citation：
 If our paper or code is helpful to you, please cite our paper. If you have any questions, please feel free to ask me.
 ```
-@article{zhang2022classification,
-  title={Classification of Brain Disorders in rs-fMRI via Local-to-Global Graph Neural Networks},
+@article{zhang2023classification,
+  title={Classification of brain disorders in rs-fMRI via local-to-global graph neural networks},
   author={Zhang, Hao and Song, Ran and Wang, Liping and Zhang, Lin and Wang, Dawei and Wang, Cong and Zhang, Wei},
   journal={IEEE Transactions on Medical Imaging},
-  year={2022},
+  volume={42},
+  number={2},
+  pages={444--455},
+  year={2023},
   publisher={IEEE}
 }
 ```
