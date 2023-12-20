@@ -68,6 +68,8 @@ class SABP(torch.nn.Module):
         margin = torch.cat((embed, score_neg),dim = -1)
         joint = self.fc(joint)
         margin = self.fc(margin)
+        joint = F.normalize(joint, dim=1)
+        margin = F.normalize(margin, dim=1)        
         mi_est = torch.mean(joint) - torch.log(torch.mean(torch.exp(margin)))    
         score = self.score_layer(x,edge_index,edge_attr).squeeze()
         perm = topk(score, self.ratio, batch)
