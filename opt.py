@@ -9,7 +9,7 @@ import logging.config
 
 class OptInit():
     def __init__(self):
-        parser = argparse.ArgumentParser(description='PyTorch implementation of EV-GCN')
+        parser = argparse.ArgumentParser(description='PyTorch implementation of LG-GNN')
         parser.add_argument('--train', default=1, type=int, help='train(default) or evaluate')
         parser.add_argument('--use_cpu', action='store_true', help='use cpu?')
         parser.add_argument('--hgc', type=int, default=16, help='hidden units of gconv layer')
