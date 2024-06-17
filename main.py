@@ -49,7 +49,7 @@ if __name__ == '__main__':
                 with torch.set_grad_enabled(True):
                     node_logits,mi_loss = model(raw_features)
                 loss_cla = loss_fn(node_logits[train_ind], labels[train_ind])
-                loss = loss_cla + 0.1 * mi_loss
+                loss = loss_cla - 0.1 * mi_loss
                 loss.backward()
                 optimizer.step()
                 correct_train, acc_train = accuracy(node_logits[train_ind].detach().cpu().numpy(), y[train_ind])  
